@@ -3,12 +3,12 @@ using TaxiParkLabs.Domain.Services.InMemory;
 
 namespace TaxiParkLabs.Domain.Tests;
 /// <summary>
-///  Класс с юнит-тестами репозитория с водителями
+///  Класс юнит-теста репозитория с водителями
 /// </summary>
 public class DriverRepositoryTests
 {
     /// <summary>
-    /// Тест проверяет успешное получение водителя вместе с его автомобилем.
+    ///Тест проверяет успешное получение водителя с его автомобилем
     /// </summary>
     [Fact]
     public async Task GetDriverWithCar_Success()
@@ -21,7 +21,7 @@ public class DriverRepositoryTests
         Assert.NotNull(driverCar?.car); 
     }
     /// <summary>
-    /// Тест проверяет успешное получение топ-5 водителей по количеству поездок.
+    ///Тест проверяет успешное получение топ-5 водителей по количеству поездок
     /// </summary>
     [Fact]
     public async Task GetTop5DriversByTripCount_Success()
@@ -33,7 +33,7 @@ public class DriverRepositoryTests
         Assert.True(topDrivers.Count <= 5);
     }
     /// <summary>
-    /// Тест проверяет успешное получение статистики по поездкам водителей.
+    ///Тест проверяет успешное получение статистики по поездкам водителей
     /// </summary>
     [Fact]
     public async Task GetDriverTripStatistics_Success()
