@@ -2,7 +2,9 @@ using TaxiParkLabs.Domain.Model;
 using TaxiParkLabs.Domain.Services.InMemory;
 
 namespace TaxiParkLabs.Domain.Tests;
-
+/// <summary>
+///  Класс с юнит-тестами репозитория с водителями
+/// </summary>
 public class DriverRepositoryTests
 {
     /// <summary>

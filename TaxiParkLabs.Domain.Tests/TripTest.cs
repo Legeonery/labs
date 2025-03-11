@@ -5,7 +5,9 @@ using System.Threading.Tasks;
 using Xunit;
 
 namespace TaxiParkLabs.Domain.Tests;
-
+/// <summary>
+///  Класс с юнит-тестами репозитория с поездками
+/// </summary>
 public class TripRepositoryTests
 {
     /// <summary>
