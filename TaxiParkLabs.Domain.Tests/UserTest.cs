@@ -9,6 +9,9 @@ namespace TaxiParkLabs.Domain.Tests
 {
     public class UserRepositoryTests
     {
+        /// <summary>
+        /// Тест проверяет успешное получение пассажиров за указанный период поездок.
+        /// </summary>
         [Fact]
         public async Task GetPassengersByTripPeriod_Success()
         {
@@ -18,6 +21,9 @@ namespace TaxiParkLabs.Domain.Tests
             Assert.NotNull(passengers);
         }
 
+        /// <summary>
+        /// Тест проверяет успешное получение количества поездок для каждого пассажира.
+        /// </summary>
         [Fact]
         public async Task GetTripCountByPassenger_Success()
         {
@@ -27,6 +33,9 @@ namespace TaxiParkLabs.Domain.Tests
             Assert.NotNull(tripCounts);
         }
 
+        /// <summary>
+        /// Тест проверяет успешное получение топ-пассажиров по количеству поездок за указанный период.
+        /// </summary>
         [Fact]
         public async Task GetTopPassengersByTripPeriod_Success()
         {

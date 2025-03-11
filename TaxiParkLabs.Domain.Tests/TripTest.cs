@@ -8,6 +8,9 @@ namespace TaxiParkLabs.Domain.Tests;
 
 public class TripRepositoryTests
 {
+    /// <summary>
+    /// Тест проверяет успешное получение статистики по поездкам водителей.
+    /// </summary>
     [Fact]
     public async Task GetDriverTripStatistics_Success()
     {
